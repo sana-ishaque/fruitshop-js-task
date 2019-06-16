@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
+
+header {
+    background-image: linear-gradient(#43484f, #60677c, #43484f);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h3 {
+    margin: 0;
+    color: white;
+    font-size: 25px;
+}
+
+#amount-have {
+    background-color: white;
+    color: #2e2e2e;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+#amount-have p {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+#amount-have input {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 8px 20px;
+    border: 1px solid #f1f0f0;
+    width: 35px;
+    outline: none;
+}
+
+#amount-total {
+    background-color: #efe2cc;
+    color: #2e2e2e;
+    display: flex;
+    align-items: center;
+    padding: 40px 0px;
+    justify-content: center;
+}
+
+#amount-total p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+#amount-total input {
+    background: none;
+    border: none;
+    outline: none;
+    color: #ed462f;
+    width: 60px;
+    font-size: 40px;
+}
+
+main {
+    display: flex;
+    padding: 50px 0px;
+    background-image: linear-gradient(#43484f, #60677c, #43484f);
+    justify-content: center;
+}
+
+main>div {
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    margin: 0 30px;
+}
+
+main div p {
+    background-color: #346e34;
+    color: white;
+    padding: 5px 0px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    padding: 0px 30px 40px 30px;
+}
+.absolute{
+    position: absolute;
+    top: 120px;
+    left: 30px;
+}
+
+.quantity {
+    position: relative;
+}
+.quantity input{
+    width: 100px;
+}
+
+.minus-btn {
+    position: absolute;
+}
+
+.plus-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
