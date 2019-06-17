@@ -26,38 +26,38 @@
 
     <main>
         <div>
-                <p>Rs. 10</p>
-                <img src="images/apple.png" alt="Apple" class="apple">
+            <p>Rs. 10</p>
+            <img src="images/apple.png" alt="Apple" class="apple">
             <div class="absolute">
                 <label>Apple</label>
                 <div class="quantity">
-                    <button class="minus-btn" type="button" name="button">-</button>
-                    <input type="text" name="name" value="1">
-                    <button class="plus-btn">+</button>
+                    <button class="minus-btn" type="button" name="button" onclick="minusApple()">-</button>
+                    <input type="text" class="input-apple" min="1">
+                    <button onclick="addApple()" class="plus-btn" onclick="add()">+</button>
                 </div>
             </div>
         </div>
         <div>
-                <p>Rs. 15</p>
-                <img src="images/orang.jpg" alt="Apple" class="apple">
+            <p>Rs. 15</p>
+            <img src="images/orang.jpg" alt="orange" class="orange">
             <div class="absolute">
                 <label>Orange</label>
                 <div class="quantity">
-                    <button class="minus-btn" type="button" name="button">-</button>
-                    <input type="text" name="name" value="1">
-                    <button class="plus-btn">+</button>
+                    <button class="minus-btn" type="button" onclick="minusOrange()">-</button>
+                    <input type="text" class="input-orange" min="1">
+                    <button onclick="addOrange()" class="plus-btn">+</button>
                 </div>
             </div>
         </div>
         <div>
-                <p>Rs. 7</p>
-                <img src="images/banana.jpg" alt="Apple" class="apple">
+            <p>Rs. 7</p>
+            <img src="images/banana.jpg" alt="banana" class="banana">
             <div class="absolute">
                 <label>Banana</label>
                 <div class="quantity">
-                    <button class="minus-btn" type="button" name="button">-</button>
-                    <input type="text" name="name" value="1">
-                    <button class="plus-btn">+</button>
+                    <button class="minus-btn" type="button" name="button" onclick="minusBanana()">-</button>
+                    <input type="text" class="input-banana" min="1">
+                    <button onclick="addBanana()" class="plus-btn">+</button>
                 </div>
             </div>
         </div>
