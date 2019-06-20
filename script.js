@@ -1,42 +1,48 @@
 // --------------------------------apple
-let quantity = 0;
-let appleValue = document.querySelector('.input-apple');
-let grandTotal = document.querySelector('#total');
+let quantityOfApple = 0;
+let appleInput = document.querySelector('.input-apple');
+let totalOfFruits = document.querySelector('#total');
+let haveRupees = document.querySelector('#have-rs').value;
 
 function addApple() {
-    appleValue.value = quantity++;
-    grandTotal.value = appleValue.value * 10;
+    appleInput.value = ++quantityOfApple;
+    totalOfFruits.value = appleInput.value * 10;
 }
-
 
 function minusApple() {
-    appleValue.value = quantity--;
-    grandTotal.value = grandTotal.value - 10;
+    appleInput.value = ++quantityOfApple;
+    totalOfFruits.value -= 10;
 }
+
 // ----------------------------------orange
-let orangeValue = document.querySelector('.input-orange');
+let quantityOfOrange = 0;
+let orangeInput = document.querySelector('.input-orange');
 function addOrange() {
-    orangeValue.value = quantity++;
-    grandTotal.value = orangeValue.value * 15;
+    orangeInput.value = ++quantityOfOrange;
+    totalOfFruits.value = orangeInput.value * 15;
 }
 
 function minusOrange() {
-    orangeValue.value = quantity--;
-    grandTotal.value = grandTotal.value - 15;
+    orangeInput.value = --quantityOfOrange;
+    totalOfFruits.value -= 15;
+
 }
 // -----------------------------------banana
-
-let bananaValue = document.querySelector('.input-banana');
+let quantityOfBanana = 0;
+let bananaInput = document.querySelector('.input-banana');
 function addBanana() {
-    bananaValue.value = quantity++;
-    grandTotal.value = bananaValue.value * 7;
+    bananaInput.value = ++quantityOfBanana;
+    totalOfFruits.value = bananaInput.value * 7;
 
 }
 
 function minusBanana() {
-    bananaValue.value = quantity--;
-    grandTotal.value = grandTotal.value - 7;
+    bananaInput.value = --quantityOfBanana;
+    totalOfFruits.value -= 7;
 
 }
 
-
+if (haveRupees < totalOfFruits.value)
+{ 
+    alert('sorry');
+}
