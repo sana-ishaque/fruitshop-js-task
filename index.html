@@ -5,27 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>JS-Fruit Shop</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <header>
         <h3>Fruit Shop</h3>
     </header>
 
     <section id="amount-have">
         <p>I have Rs.</p>
-        <input type="text" id="have-rs">
+        <input type="text" id="balance">
     </section>
 
     <section id="amount-total">
         <p>Your total is Rs.</p>
-        <input type="text" id="total">
+        <input type="number" id="total">
     </section>
 
     <main>
-        <div id="apple">
+        <div class="apple">
             <div>
                 <p class="price">Rs. 10</p>
             </div>
@@ -35,13 +36,13 @@
             <div>
                 <label>Apple</label>
                 <div class="quantity">
-                    <button class="minus-btn" type="button" name="button" onclick="minusApple()">-</button>
-                    <input type="number" class="input-apple" min="1" value="0">
-                    <button onclick="addApple()" class="plus-btn">+</button>
+                    <button class="minus" onclick="sub()">-</button>
+                    <input type="number" id="apple">
+                    <button class="plus" onclick="add()">+</button>
                 </div>
             </div>
         </div>
-        <div id="orange">
+        <div class="orange">
             <div>
                 <p class="price">Rs. 15</p>
             </div>
@@ -51,13 +52,13 @@
             <div>
                 <label>Orange</label>
                 <div class="quantity">
-                    <button class="minus-btn" type="button" onclick="minusOrange()">-</button>
-                    <input type="number" class="input-orange" min="1" value="0">
-                    <button onclick="addOrange()" class="plus-btn">+</button>
+                    <button class="minus" onclick="sub1()">-</button>
+                    <input type="number" id="orange">
+                    <button class="plus" onclick="add1()">+</button>
                 </div>
             </div>
         </div>
-        <div id="banana">
+        <div class="banana">
             <div>
                 <p class="price">Rs. 7</p>
             </div>
@@ -67,13 +68,14 @@
             <div>
                 <label>Banana</label>
                 <div class="quantity">
-                    <button class="minus-btn" type="button" name="button" onclick="minusBanana()">-</button>
-                    <input type="number" class="input-banana" min="1" value="0">
-                    <button onclick="addBanana()" class="plus-btn">+</button>
+                    <button class="minus" onclick="sub2()">-</button>
+                    <input type="number" id="banana">
+                    <button class="plus" onclick="add2()">+</button>
                 </div>
             </div>
         </div>
     </main>
     <script src="script.js"></script>
 </body>
+
 </html>

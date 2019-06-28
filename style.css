@@ -88,14 +88,14 @@ label {
     font-weight: bold;
 }
 
-#apple, #orange, #banana {
+.apple, .orange, .banana {
     background-color: white;
     padding-bottom: 10px;
     margin: 10px 10px;
     max-width: 250px;
 }
 
-#apple img, #orange img, #banana img {
+.apple img, .orange img, .banana img {
     width: 100%;
     max-width: 100px;
     height: auto;
@@ -112,11 +112,7 @@ label {
 
 input {
     width: 60px;
-    outline: none;
-    border: 0.75px solid #3a3f40;
-    background-color: #dbdada;
     text-align: center;
-    height: 17.5px;
 }
 
 input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
@@ -130,7 +126,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 
 /* buttons */
 
-.plus-btn {
+.plus {
     border: 0.75px solid #3a3f40;
     color: white;
     border-left-style: none;
@@ -140,7 +136,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     outline: none;
 }
 
-.minus-btn {
+.minus {
     border: 0.75px solid #3a3f40;
     border-right-style: none;
     background-color: #404745;
